@@ -122,7 +122,7 @@ section#cursos > div {
     gap: 1rem;
     align-items: start;
     margin-bottom: 1px;
-    padding: 1px;
+    padding: 1rem;
     
 }
 
@@ -157,9 +157,53 @@ h1{
     margin: auto;
     
 } 
+footer{
+    padding: 2rem;
+    
+}
+footer p {
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+footer nav a {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+footer input{
+    display: block;
+    border: 2px solid #000;
+    background: #FFF;
+    box-shadow: 4px 4px 0px 0px #000;
+    width: 265px;
+    height: 48px;
+    margin-top: 0.5rem;
+    
+}
+footer label{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0.6rem;
+}
+
+
 h1#h1domain{
-    
-    
     font-size: 1.5rem;
 }   
 span{
