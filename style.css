@@ -51,18 +51,11 @@ header img{
     margin: auto;
     width: 106px;
 }
-section#inicio{
-    
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    margin-left: 1rem;
-    margin-right: 1rem; 
-    
-    
-}
-main img{
-    width: 286px;
+
+main section#inicio img{
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
 }
 
 section#inicio a.buttom{
@@ -93,6 +86,13 @@ section#inicio h1 span::after{
     
 
 }
+main{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
 
 section#inicio p{
     font-size: 1.25rem;
@@ -102,15 +102,12 @@ section#inicio p{
 
 }
 section#cursos{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    
     margin-top: -12rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
+   
     
 }
 
@@ -221,4 +218,37 @@ img.icone2{
 
 
 }
+@media screen and (min-width:768px) {
+    header nav {
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    header div a.buttom{
+        margin: auto;
+    }
+    section#cursos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
 
+    }
+    section#cursos > div{
+        width: 272px;
+        height: 306px;
+
+           
+    }
+    section#cursos > div:nth-child(2n){
+        margin-top: 3rem;
+    }
+    
+    div#variosoutros{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    div#variosoutros a{
+        margin: auto;   
+    }
+}
